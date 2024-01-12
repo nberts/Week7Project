@@ -5,34 +5,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
     <title>Weather App</title>
   </head>
 
   <body>
-    <header>ADD LOGO THINGY</header>
-    <main>
-      <div class="main-area">
-        <h1>Ottawa</h1>
-        <p>
-          Friday, 09:59, scattered clouds
-          <br />
-          Humidity: <strong>88%</strong>, Wind: <strong>3.13km/h</strong>
-        </p>
+      <img class="logo" src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-6.png"/> <div class="weather-app">
+    <header>      
         <form>
-          <input type="search" placeholder="Enter a City" />
-          <input type="submit" value="search" />
+          <input type="search" placeholder="Enter a City" class="input-bar" />
+          <input type="submit" value="Search" class="button" />
         </form>
-        <div>☁️ 20°c</div>
+    </header>
+    <main>
+        <div class="hero-area">
+          <div><h1>Ottawa</h1>
+          <p>
+            Friday, 09:59, scattered clouds
+            <br />
+            Humidity: <strong class="details-bolded">88%</strong>, Wind:
+            <strong class="details-bolded">3.13km/h</strong>
+          </p>
+        </div>
+          <div class="main-temp">
+            <div class="weather-icon">🌥</div>
+            <div class="main-temp-value">20°c</div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
       Coded by
-      <a href="https://github.com/nberts">Nina Bertrand</a>, is open sourced on
-      <a href="https://github.com/nberts/Week7Project">GitHub</a> & hosted on
-      <a href="https://65a14f211e52d9007746be96--ninab-weather-app.netlify.app/"
+      <a class="footer-links" href="https://github.com/nberts">Nina Bertrand</a
+      >, is open sourced on
+      <a class="footer-links" href="https://github.com/nberts/Week7Project"
+        >GitHub</a
+      >
+      & hosted on
+      <a
+        class="footer-links"
+        href="https://65a14f211e52d9007746be96--ninab-weather-app.netlify.app/"
         >Netlify</a
       >
     </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
