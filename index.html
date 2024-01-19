@@ -9,25 +9,26 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
 
   <body>
       <img class="logo" src="https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-6.png"/> <div class="weather-app">
     <header>      
-        <form>
-          <input type="search" placeholder="Enter a City" class="input-bar" />
+        <form id="search-form">
+          <input type="search" placeholder="Enter a City" class="input-bar" id="search-input"/>
           <input type="submit" value="Search" class="button" />
         </form>
     </header>
     <main>
         <div class="hero-area">
-          <div><h1>Ottawa</h1>
+          <div><h1 class="city-name">Ottawa</h1>
           <p>
-            Friday, 09:59, scattered clouds
+            <span id="current-date">Friday, Jan 19, 9:59 AM</span>, scattered clouds
             <br />
-            Humidity: <strong class="details-bolded">88%</strong>, Wind:
-            <strong class="details-bolded">3.13km/h</strong>
+            Humidity: <strong class="details-bolded" id="current-humidity">88%</strong>, Wind:
+            <strong class="details-bolded" id="current-wind">3.13km/h</strong>
           </p>
         </div>
           <div class="main-temp">
